@@ -18,12 +18,6 @@ fn main() {
     );
 
     // ASSSIGNMENT:
-    // Initialize 5 new variables based on the following data types:
-    // 1. a string
-    // 2. an integer
-    // 3. a float
-    // 4. a boolean
-    // 5. a char
     let new_person: String = String::from("Ezekiel");
     let new_age: u32 = 20;
     let new_height_meters: f64 = 1.85; // this is ~6.1.
