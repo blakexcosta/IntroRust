@@ -28,6 +28,16 @@ fn main() {
     // ASSSIGNMENT:
     // 1. Reassign Variables with the 'mut' keyword
     // 2. Print out variables before and after reassignment
-    let num1: u32 = 5;
-    let string1: String = String::from("hello");
+    let mut num1: u32 = 5;
+    let mut string1: String = String::from("hello");
+
+    // printing out initialize values
+    println!("num1: {}\nstring1: {}", num1, string1);
+
+    // reassigning values
+    num1 = 50;
+    string1 = String::from("goodbye");
+
+    // printing out newly reassigned values
+    println!("num1: {}\nstring1: {}", num1, string1);
 }
