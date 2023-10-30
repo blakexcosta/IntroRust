@@ -40,4 +40,9 @@ fn main() {
     println!("menu_vec: {:?}", menu_vec);
 
     // ASSSIGNMENT:
+    // 1. Create a new tuple with at least 4 elements
+
+    // 2. Access tuple items
+
+    // 3. Destructure the tuple into different values and print it out
 }
