@@ -40,9 +40,20 @@ fn main() {
     println!("menu_vec: {:?}", menu_vec);
 
     // ASSSIGNMENT:
+    // solution not included here. You should be able to solve by using the notes from the lecture above!
     // 1. Create a new tuple with at least 4 elements
 
-    // 2. Access tuple items
+    // 2. Access tuple items and print them out
 
     // 3. Destructure the tuple into different values and print it out
+
+    // 4. create a new array with at least 3 integer elements in it
+
+    // 5. Create a mutable vector with at least 5 elements in it
+
+    // 6. remove the last element in the vector
+
+    // 7. Add a new element to the vector
+
+    // 8. Print the vector out
 }
