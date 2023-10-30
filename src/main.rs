@@ -1,33 +1,43 @@
 fn main() {
-    // PART 1 - 2
-    println!("Hello, Blake!");
+    // PART 4 - MORE DATA TYPES
+    // TUPLES
+    let tuple = (1000, 59.69, "Bob".to_string());
+    // accessing elements in tuple
+    println!("tuple.0: {}", tuple.0);
+    println!("tuple.2: {}", tuple.2);
+    // destructuring a tuple
+    let (a, b, c) = ("sally".to_string(), "bob".to_string(), "joe".to_string()); // unpacks tuple into variables
+    println!("a: {}, b: {}, c: {}", a, b, c);
 
-    // Comments
-    // THIS IS A COMMENT
-    /* THIS IS A MULTILINE COMMENTS */
+    // ARRAYS
+    let menu_items = [
+        "fish".to_string(),
+        "chicken".to_string(),
+        "tuna".to_string(),
+    ];
+    // arrays cannot have different types
+    //let err_error = [1, 2, 3, "Bob".to_string()];
+    // can access elements by index in arrays
+    println!("new_array[0]: {}", menu_items[0]);
+    println!("new_array[4]: {}", menu_items[2]);
+    println!("new_array[0]: {}", menu_items[menu_items.len() - 1]);
 
-    // Variables and Basic Data Types
-    let age: u32 = 5; // cant be negative
-    let height: f64 = 5.10;
-    let a_boolean: bool = false;
-    let first_letter_of_name: char = 'B';
-    let a_statement: String = String::from("I don't like the letter B");
-    let mut b_statement: String = "I love sunsets over the mountains".to_string();
-    println!(
-        "age: {}\nheight: {}\na_boolean: {}\nfirst_letter_of_name: {}\na_statement: {}\nb_statement: {}",
-        age, height, a_boolean, first_letter_of_name, a_statement, b_statement
-    );
+    // VECTORS
+    // create a vector with initial values
+    let mut menu_vec = vec!["fish", "chicken", "tuna"];
+    // add an element to the vector
+    menu_vec.push("salmon");
+    // access individual elements of the vector
+    println!("First element: {}", menu_vec[0]);
+    println!("Second element: {}", menu_vec[1]);
+    println!("Second element: {}", menu_vec[menu_vec.len() - 1]);
+    println!("menu_vec: {:?}", menu_vec);
 
-    // PART 3
-    // uncomment and show this erroring out
-    // a_statement = String::from("I do like the letter B"); // this will error out
-    // println!("b_statement: {}", b_statement);
-    b_statement = String::from("I don't like sunsets");
-    println!("b_statement: {}", b_statement);
+    // remove an element from the vector
+    menu_vec.pop(); // removes the last added element/last element
+    menu_vec.remove(1); // zero based as well
+                        // iterate over the vector again
+    println!("menu_vec: {:?}", menu_vec);
 
     // ASSSIGNMENT:
-    // 1. Reassign Variables with the 'mut' keyword
-    // 2. Print out variables before and after reassignment
-    let num1: u32 = 5;
-    let string1: String = String::from("hello");
 }
