@@ -3,48 +3,9 @@ fn main() {
 
     // ----------------------------------------
     // IF
-    let number = 1000;
-    if number > 100 {
-        println!("Number is greater than 100");
-    } else {
-        println!("Number is not greater than 100");
-    }
-    // else if
-    let num = -50;
-    if num > 0 {
-        println!("Number is positive");
-    } else if num < 0 {
-        println!("Number is negative");
-    } else {
-        println!("Number is zero");
-    }
+
     // ----------------------------------------
     // LOOPS
-
-    //while loop
-    //declare counter variable
-    let mut counter = 1;
-    //set our looping condition
-    while counter < 6 {
-        println!("{}", counter);
-        // increment counter for condtion
-        counter += 1;
-    }
-
-    // for loops
-    // inclusive range
-    for number in 1..=5 {
-        println!("for loop inclusive: {}", number);
-    }
-    // exclusive range
-    for number in 1..5 {
-        println!("for loop exclusive: {}", number);
-    }
-    // looping over a vector
-    let numbers = vec![1, 2, 3, 4, 5];
-    for number in &numbers {
-        println!("{}", number);
-    }
 
     // ----------------------------------------
     // ASSSIGNMENT:
