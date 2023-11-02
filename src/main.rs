@@ -1,59 +1,67 @@
 fn main() {
-    // PART 4 - MORE DATA TYPES
-    // TUPLES
-    let tuple = (1000, 59.69, "Bob".to_string());
-    // accessing elements in tuple
-    println!("tuple.0: {}", tuple.0);
-    println!("tuple.2: {}", tuple.2);
-    // destructuring a tuple
-    let (a, b, c) = ("sally".to_string(), "bob".to_string(), "joe".to_string()); // unpacks tuple into variables
-    println!("a: {}, b: {}, c: {}", a, b, c);
+    // PART 5 CONTROL FLOW
 
-    // ARRAYS
-    let menu_items = [
-        "fish".to_string(),
-        "chicken".to_string(),
-        "tuna".to_string(),
-    ];
-    // arrays cannot have different types
-    //let err_error = [1, 2, 3, "Bob".to_string()];
-    // can access elements by index in arrays
-    println!("new_array[0]: {}", menu_items[0]);
-    println!("new_array[4]: {}", menu_items[2]);
-    println!("new_array[0]: {}", menu_items[menu_items.len() - 1]);
+    // ----------------------------------------
+    // IF
+    let number = 1000;
+    if number > 100 {
+        println!("Number is greater than 100");
+    } else {
+        println!("Number is not greater than 100");
+    }
+    // else if
+    let num = -50;
+    if num > 0 {
+        println!("Number is positive");
+    } else if num < 0 {
+        println!("Number is negative");
+    } else {
+        println!("Number is zero");
+    }
+    // ----------------------------------------
+    // LOOPS
 
-    // VECTORS
-    // create a vector with initial values
-    let mut menu_vec = vec!["fish", "chicken", "tuna"];
-    // add an element to the vector
-    menu_vec.push("salmon");
-    // access individual elements of the vector
-    println!("First element: {}", menu_vec[0]);
-    println!("Second element: {}", menu_vec[1]);
-    println!("Second element: {}", menu_vec[menu_vec.len() - 1]);
-    println!("menu_vec: {:?}", menu_vec);
+    //while loop
+    //declare counter variable
+    let mut counter = 1;
+    //set our looping condition
+    while counter < 6 {
+        println!("{}", counter);
+        // increment counter for condtion
+        counter += 1;
+    }
 
-    // remove an element from the vector
-    menu_vec.pop(); // removes the last added element/last element
-    menu_vec.remove(1); // zero based as well
-                        // iterate over the vector again
-    println!("menu_vec: {:?}", menu_vec);
+    // for loops
+    // inclusive range
+    for number in 1..=5 {
+        println!("for loop inclusive: {}", number);
+    }
+    // exclusive range
+    for number in 1..5 {
+        println!("for loop exclusive: {}", number);
+    }
+    // looping over a vector
+    let numbers = vec![1, 2, 3, 4, 5];
+    for number in &numbers {
+        println!("{}", number);
+    }
 
+    // ----------------------------------------
     // ASSSIGNMENT:
-    // solution not included here. You should be able to solve by using the notes from the lecture above!
-    // 1. Create a new tuple with at least 4 elements
+    // Quiz:
+    // 1. is `..=` inclusive or exclusive when in a for loop?
+    // 2. What will the last println! of the following code be?
+    // for number in 1..12 {
+    //     println!("{}", number);
+    // }
 
-    // 2. Access tuple items and print them out
+    // Practical
+    // 1. Iterate over this vector and print out the values:
+    let names = vec!["Bob", "Frank", "Ferris"];
 
-    // 3. Destructure the tuple into different values and print it out
+    //2. Use a while loop to print the values 0 to 100 and add each element to a vector
+    // HINT: Use type annotations when declaring a new vector (in the format of Vec<T>)
 
-    // 4. create a new array with at least 3 integer elements in it
-
-    // 5. Create a mutable vector with at least 5 elements in it
-
-    // 6. remove the last element in the vector
-
-    // 7. Add a new element to the vector
-
-    // 8. Print the vector out
+    //3. use an if statement to check whether the altitude is > 5000
+    let altitude = 6000;
 }
