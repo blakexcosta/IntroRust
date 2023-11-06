@@ -29,6 +29,14 @@ pub fn sum_pub(a: i32, b: i32) -> i32 {
 }
 // ----------------------------------------
 
+fn print_my_name(name: String) {
+    println!("{}", name);
+}
+
+fn sum_f64(a: f64, b: f64) -> f64 {
+    return a + b;
+}
+
 fn main() {
     // calling function that returns nothing
     return_nothing();
@@ -52,8 +60,11 @@ fn main() {
     // 1. Create a function that prints your name
 
     // 2. Call the new name function in main()
+    print_my_name("Cory".to_string());
 
     // 3. create a function that adds two f64's together and returns a f64
 
     // 4. Call the new f64 function in main(), store the result in a variable, and print that variable to the console
+    let float_sum = sum_f64(5.0, 2.5);
+    println!("{}", float_sum);
 }
